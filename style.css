@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  background: #CBCBC9;
+}
+.logo{
+  border-radius: 100px;
+}
+.container-1{
+  background: #0A31A3;
+  top:0;
+  max-width: 100%;
+}
+
+img{
+  margin-left:150px;
+  margin-top:50px;
+}
+
+.titles{
+  margin-left:150px;
+  margin-top:10px;
+  color:#fff;
+}
+
+.titles h1{
+  font-size: 30px;
+  letter-spacing: 10px;
+  weight:bold;
+}
+
+.titles h1:hover{
+  text-decoration: underline;
+  color:#F4B42A;
+}
+
+.titles p{
+  font-size: 14px;
+  weight:300;
+  margin-top:10px;
+}
+
+.banner{
+  width: 100%;
+  background: #F4B42A;
+}
+
+.banner p{
+  font-size: 22px;
+  color:#000;
+  font-weight:bolder;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  border-left: solid 2px #0A31A3;
+  border-right: solid 2px #0A31A3;
+  padding: 15px 25px;
+}
+
+.menu{
+  background: #0A31A3;
+  height: 58px;
+  width: 100%;
+}
+
+nav ul{
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+nav ul ul{
+  display: none;
+  position: absolute;
+  top:100%;
+  width: 100%;
+  left: 0;
+}
+nav ul li{
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+nav ul li:hover ul{
+  display: block;
+}
+nav li li{
+  float: none;
+  position: relative;
+  width: 100%;
+  border: none;
+}
+nav ul ul li{
+  font-size: 1rem;
+  border-bottom: solid 2px #0A31A3;
+}
+nav ul ul li:first-child a{
+  border-top: solid 2px #0A31A3;
+}
+nav ul li:hover a{
+  background: white;
+  color:#0A31A3;
+  text-decoration: none;
+  transition: 0.4s;
+}
+nav ul li li:hover a{
+  background: #0A31A3;
+  color:white;
+  font-weight: bold;
+}
+
+.sliders-wrapper{
+  width: 100%;
+  margin: auto;
+  background: #CBCBC9;
+  margin-bottom: 100px;
+}
+
+.Slide img{
+  width: 1000px;
+  vertical-align: middle;
+  height:475px;
+  border-radius: 30px;
+}
+
+.Slide{
+  display: none;
+  text-align: center;
+}
+
+::-webkit-scrollbar{
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #CBCBC9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #0A31A3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #F4B42A;
+}
+
+.footer-distributed {
+  background-color: #0A31A3;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #0A31A3;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); color:#F4B42A;}
+
+.footer-distributed p.footer-links a:hover{color:#F4B42A;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
